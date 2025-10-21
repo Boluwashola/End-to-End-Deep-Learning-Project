@@ -6,13 +6,7 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
 import pickle
 
 ## Loading the trained model
-try:
-    model = tf.keras.models.load_model("model.h5", compile=False)
-    # Recompile with current TensorFlow version
-    model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
-except Exception as e:
-    st.error(f"Error loading model: {e}")
-    st.stop()
+model = tf.keras.models.load_model("model.h5")
 
 ## Loading the Encoders and Scalers
 with open('label_encoder_gender.pkl', 'rb') as file:
