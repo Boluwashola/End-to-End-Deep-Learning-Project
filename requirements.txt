@@ -1,5 +1,6 @@
-tensorflow==2.20.0
-pandas>=2.0.0
-numpy>=1.26.0
-scikit-learn>=1.3.0
-streamlit>=1.28.0
+# tensorflow==2.20.0
+# pandas>=2.0.0
+# numpy>=1.26.0
+# scikit-learn>=1.3.0
+# streamlit>=1.28.0
+scikeras
